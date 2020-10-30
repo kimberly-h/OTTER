@@ -516,7 +516,7 @@ int main() {
 			materials[ix].Albedo2->Bind(1);
 			materials[ix].Specular->Bind(2);
 			shader->SetUniform("u_Shininess", materials[ix].Shininess); 
-			shader->SetUniform("u_TextureMix", materials[ix].TextureMix);
+			shader->SetUniform("u_TexturedMix", materials[ix].TextureMix);
 
 			RenderVAO(shader, vaos[ix], camera, transforms[ix]);	
 
